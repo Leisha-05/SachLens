@@ -1,0 +1,228 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  top: 20px;           /* lowers it from the top */
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 100px); /* keeps space on sides for large screens */
+  padding: 20px 40px;
+  background-color: rgba(255, 255, 255, 0); /* starts transparent */
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  z-index: 10;
+}
+
+.navbar.scrolled {
+  background-color: rgba(255, 255, 255, .8);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* When hovered AND not scrolled, look like scrolled state */
+.navbar:hover {
+  background-color: rgba(255, 255, 255, .8);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.navbar:hover .nav-left .nav-links a,
+.navbar:hover .nav-right .nav-links a,
+.navbar:hover .logo {
+  color: #04050f;
+}
+
+.navbar:hover .nav-right .nav-links .btn.primary {
+  background-color: #065aa8;
+  color: #ffffff;
+}
+
+.nav-left,
+.nav-right {
+  flex: auto; /* equal space on left and right */
+  display: flex;
+}
+.nav-left {
+  justify-content: flex-start;
+}
+
+.nav-right {
+  justify-content: flex-end;
+}
+
+.nav-left .nav-links,
+.nav-right .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-left .nav-links a,
+.nav-right .nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 6px 10px; 
+  border-radius: 50px; 
+  transition: color 0.3s ease, background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.navbar.scrolled .nav-left .nav-links a,
+.navbar.scrolled .nav-right .nav-links a {
+  color: #04050f;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  transition: color 0.3s ease;
+  position: relative;
+  z-index: 2;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 4px;
+}
+
+.navbar.scrolled .logo {
+  color: #04050f;
+}
+
+.navbar a{
+    font-size: 16px;
+}
+
+.nav-left .nav-links a:hover,
+.nav-right .nav-links a:hover {
+  background-color: rgba(0, 0, 0, 0.15); /* soft transparent white */
+  backdrop-filter: blur(8px); /* optional glass effect */
+  border-radius: 50px;
+  padding: 6px 10px;
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0; left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(180deg, rgba(4, 5, 15, 0.1) 0%, rgba(4, 5, 15, 0.85) 100%);
+  z-index: -1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffffff;
+}
+
+.brand-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 8rem;
+  font-weight: 700;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+.hero-tagline {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 20px;
+  letter-spacing: 3px;
+  opacity: 0.85;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  color: #ffffff;
+  opacity: 0.6;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, -10px); }
+}
+
+@media (max-width: 768px) {
+  .brand-name {
+    font-size: 4rem;
+    letter-spacing: 6px;
+  }
+  .hero-tagline {
+    font-size: 1rem;
+  }
+}
+.c-logo {
+  display: inline-flex;
+  vertical-align: baseline;
+  height: 1em;   
+  transform: translateY(0.15em); 
+  transition: transform 0.4s ease;
+    margin: 0 -0.35em;
+    transition: all 0.4s ease;
+}
+
+.magnify-c {
+  height: 100%;
+  width: auto;
+}
+
+.brand-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 8rem; 
+  font-weight: 700;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+    display: inline-block;
+  background: none;
+  background-clip: border-box;
+  -webkit-text-fill-color: #fff;
+  transition: all 0.4s ease;
+}
+
+.brand-name:hover .circle-part,
+.brand-name:hover .c-part,
+.brand-name:hover .handle-part {
+  stroke: url(#grad);
+  transition: stroke 0.4s ease;
+}
+
+
+.c-logo:hover, .brand-name:hover .c-logo  {
+  transform: translateY(0.15em) scale(1.35); /* optional hover effect */
+}
+
+
