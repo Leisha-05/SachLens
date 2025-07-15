@@ -1,95 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SachLens</title>
-  
-  <link rel="stylesheet" href="style.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
-  <!-- Navbar -->
-  <header class="navbar">
-    <div class="nav-left">
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SachLens</title>
 
-    <div class="logo">SachLens <i class="fa-brands fa-searchengin"></i></div>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="nav-left">
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
 
-    <div class="nav-right">
-      <ul class="nav-links">
-        <li><a href="#">Analyze</a></li>
-        <li><a href="#">Image Analyze</a></li>
-        <li><a href="#">Translator</a></li>
-        <li><a href="#">Chatbot</a></li>
-      </ul>
-    </div>
-  </header>
+      <div class="logo">SachLens <i class="fa-brands fa-searchengin"></i></div>
 
-  <!-- Hero Section -->
-  <section class="hero" id="home">
-  <video class="hero-video" autoplay muted loop>
-    <source src="hero.mp4" type="video/mp4">
-  </video>
-  <div class="overlay"></div>
-  <div class="hero-content">
-    <h1 class="brand-name">
-  Sa
-  <span class="c-logo">
-    <svg width="80" height="80" viewBox="0 0 100 100" fill="none"
-         xmlns="http://www.w3.org/2000/svg" class="magnify-c">
-      <defs>
-        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stop-color="#0ea5e9"/>
-          <stop offset="100%" stop-color="#3b82f6"/>
-        </linearGradient>
-      </defs>
-      <circle class="circle-part" cx="40" cy="40" r="30"
-              stroke="white" stroke-width="7"/>
-      <path class="c-part" d="M 40 20 A 20 20 0 1 0 40 60"
-            stroke="white" stroke-width="7" fill="none"/>
-      <line class="handle-part" x1="60" y1="60" x2="85" y2="85"
-            stroke="white" stroke-width="7" stroke-linecap="round"/>
-    </svg>
-  </span>
-  hLens
-</h1>
- <p class="hero-tagline">AI. Vision. Insight.</p>
-    <!-- optional: scroll cue only, no CTA button -->
-    <div class="scroll-down">↓</div>
-  </div>
-</section>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="#">Analyze Text</a></li>
+          <li><a href="#">Verify Images</a></li>
+          <li><a href="#">Translate</a></li>
+          <li><a href="#">Ask AI</a></li>
+        </ul>
+      </div>
+    </header>
 
-<section class="about-panel" id="about">
-  <div class="about-label">
-    ABOUT
-  </div>
-  <div class="about-divider"></div>
-  <div class="about-content">
-    <p>
-      See the story behind the story!<br>
-      SachLens is your lens to a more honest digital world.<br><br>
-      In an age of deepfakes, echo chambers, and hidden bias, SachLens helps you spot what others overlook — emotional tone, credibility, cultural context, and even AI-generated visuals.<br>
-      We don’t just translate words — we translate meaning.<br>
-      We don’t just echo the news — we question it.<br>
-      With visual breakdowns, cultural intelligence, and truth-first tools, SachLens empowers you to cross-check facts, decode manipulation, and see reality clearly.<br><br>
-      Because the truth isn’t just spoken — it’s seen.
-    </p>
-  </div>
-</section>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <video class="hero-video" autoplay muted loop>
+        <source src="assets/hero.mp4" type="video/mp4" />
+      </video>
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1 class="brand-name">
+          Sa
+          <span class="c-logo">
+            <svg
+              width="80"
+              height="80"
+              viewBox="0 0 100 100"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="magnify-c"
+            >
+              <defs>
+                <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#0ea5e9" />
+                  <stop offset="100%" stop-color="#3b82f6" />
+                </linearGradient>
+              </defs>
+              <circle
+                class="circle-part"
+                cx="40"
+                cy="40"
+                r="30"
+                stroke="white"
+                stroke-width="7"
+              />
+              <path
+                class="c-part"
+                d="M 40 20 A 20 20 0 1 0 40 60"
+                stroke="white"
+                stroke-width="7"
+                fill="none"
+              />
+              <line
+                class="handle-part"
+                x1="60"
+                y1="60"
+                x2="85"
+                y2="85"
+                stroke="white"
+                stroke-width="7"
+                stroke-linecap="round"
+              />
+            </svg>
+          </span>
+          hLens
+        </h1>
+        <p class="hero-tagline">AI. Vision. Insight.</p>
+        <!-- optional: scroll cue only, no CTA button -->
+        <div class="scroll-down">↓</div>
+      </div>
+    </section>
 
+    <section class="scroll">
+      <section class="about-panel" id="about">
+        <div class="about-label">ABOUT</div>
+        <div class="about-divider"></div>
+        <div class="about-content">
+          <p>
+            See the story behind the story!<br />
+            SachLens is your lens to a more honest digital world.<br /><br />
+            In an age of deepfakes, echo chambers, and hidden bias, SachLens
+            helps you spot what others overlook — emotional tone, credibility,
+            cultural context, and even AI-generated visuals.<br />
+            We don’t just translate words — we translate meaning.<br />
+            We don’t just echo the news — we question it.<br />
+            With visual breakdowns, cultural intelligence, and truth-first
+            tools, SachLens empowers you to cross-check facts, decode
+            manipulation, and see reality clearly.<br /><br />
+            Because the truth isn’t just spoken — it’s seen.
+          </p>
+        </div>
+      </section>
 
-<div class="scroll-spacer"></div>
+      <section class="features-panel" id="features">
+        <div class="features-overlay"></div>
+        <div class="features-content">
+          <div class="features-heading">
+            <h2>See More. Know More. Trust Better.</h2>
+            <p>
+              Get context, truth, and clarity — for words, visuals, and beyond.
+            </p>
+          </div>
 
-<script src="script.js"></script>
-</body>
+          <video
+            class="features-bg"
+            id="features-bg"
+            autoplay
+            muted
+            loop
+            playsinline
+          >
+            <source src="assets/236884_small.mp4" type="video/mp4" />
+          </video>
+          <div class="features-grid">
+            <div class="feature-card">
+              <i class="fas fa-file-alt"></i>
+              <div class="feature-text">
+                <h3>Spot Bias Fast</h3>
+                <p>Uncover hidden spin and emotion in any article.</p>
+              </div>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-language"></i>
+              <div class="feature-text">
+                <h3>Smart Translate</h3>
+                <p>Read global news in your language — with context.</p>
+              </div>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-image"></i>
+              <div class="feature-text">
+                <h3>Verify Visuals</h3>
+                <p>Catch deepfakes and edits before they fool you.</p>
+              </div>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-lightbulb"></i>
+              <div class="feature-text">
+                <h3>Ask AI</h3>
+                <p>Get instant facts, context, and truth checks.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <section class="contact-panel" id="contact">
+        <div class="contact-container">
+          <div class="contact-image">
+            <img src="assets/Contact.png" alt="Contact Us" />
+          </div>
+          <div class="contact-content">
+            <p>
+              Got questions, ideas, or feedback?
+              <strong> Let’s connect.</strong>
+            </p>
+            <a href="mailto:guptaleisha@gmail.com" class="btn primary"
+              >Email Us</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-bottom">
+          <p>&copy; 2025 SachLens. All rights reserved.</p>
+        </div>
+      </footer>
+    </section>
+
+    <div class="scroll-spacer"></div>
+
+    <script src="script.js"></script>
+  </body>
 </html>

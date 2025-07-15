@@ -10,7 +10,7 @@ window.addEventListener("scroll", () => {
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to(".about-panel", {
+gsap.to(".scroll", {
   yPercent: -100, 
   ease: "none",
   scrollTrigger: {
@@ -19,5 +19,26 @@ gsap.to(".about-panel", {
     end: "bottom top",
     scrub: true,
     pin: ".hero",
+  }
+});
+
+gsap.from(".feature-card", {
+  scrollTrigger: {
+    trigger: ".features-panel",
+    start: "top 80%"
+  },
+  y: 50,
+  opacity: 0,
+  duration: 1,
+  stagger: 0.2,
+  ease: "power2.out"
+});
+
+window.addEventListener("DOMContentLoaded", () => {
+  const featuresBg = document.getElementById("features-bg");
+  if (featuresBg) {
+    featuresBg.addEventListener("canplay", () => {
+      featuresBg.playbackRate = 0.5; // 0.5x = half speed
+    });
   }
 });
