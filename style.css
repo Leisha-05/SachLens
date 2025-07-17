@@ -73,6 +73,7 @@ body, html {
   padding: 6px 10px; 
   border-radius: 50px; 
   transition: color 0.3s ease, background-color 0.3s ease, backdrop-filter 0.3s ease;
+  font-size: 14px;
 }
 
 .navbar.scrolled .nav-left .nav-links a,
@@ -280,6 +281,23 @@ body, html {
   justify-content: center;
   
 }
+
+.feature-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.feature-card-link .feature-card {
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.feature-card-link .feature-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
 
 .features-bg {
   position: absolute;

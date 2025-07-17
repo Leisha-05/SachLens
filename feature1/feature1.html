@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fake Fact Detection | SachLens</title>
+  <link rel="stylesheet" href="feature1.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@600;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+      <div class="nav-left">
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#features">Features</a></li>
+          <li><a href="../index.html#contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="logo">SachLens <i class="fa-brands fa-searchengin"></i></div>
+
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="#">Analyze Text</a></li>
+          <li><a href="#">Verify Images</a></li>
+          <li><a href="#">Translate</a></li>
+          <li><a href="#">Fact Checker</a></li>
+        </ul>
+      </div>
+    </header>
+
+  <!-- HERO SECTION -->
+  <!-- <section class="hero">
+    <video autoplay muted loop class="hero-bg">
+      <source src="../assets/feature1.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Fake News Detection</h1>
+      <p class="typing-text">Your intelligent news detector</p>
+      <p>Instantly analyze content for credibility, bias, and manipulation using our multilingual AI.</p>
+      <a href="#analyzer" class="btn primary">Start Analyzing</a>
+    </div>
+  </section> -->
+
+  <!-- HOW IT WORKS -->
+  <!-- <section class="how-it-works">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step"><i class="fas fa-pen-nib"></i><p>Paste or type a news article.</p></div>
+      <div class="step"><i class="fas fa-brain"></i><p>Our AI scans emotional tone & source trust.</p></div>
+      <div class="step"><i class="fas fa-check-circle"></i><p>See the verdict & confidence level instantly.</p></div>
+    </div>
+  </section> -->
+
+  <!-- ANALYZER -->
+  <section class="analyzer" id="analyzer">
+     <video autoplay muted loop playsinline class="hero-bg">
+    <source src="../assets/feature1.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+    <h2>Check Your Facts</h2>
+    <div class="analyzer-box">
+    
+      <textarea id="news-input" placeholder="Paste article text or link here..."></textarea>
+      <button id="analyzeBtn" class="btn primary">Analyze Now</button>
+    </div>
+
+    <div id="result-box" class="hidden">
+      <h3>Analysis Result</h3>
+      <p id="verdict">Loading...</p>
+      <div class="meter"><div id="score-bar"></div></div>
+      <p id="confidence">Confidence Score: --%</p>
+      <!-- <button class="btn primary" onclick="resetAnalyzer()">Check Another</button> -->
+      <button id="resetBtn" class="btn primary">Check Another</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2025 SachLens. Built for truth-seekers.</p>
+  </footer>
+
+  <script src="feature1.js" defer></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
