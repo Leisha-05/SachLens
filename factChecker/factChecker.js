@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
     navbar.classList.toggle("scrolled", window.scrollY > 20);
   });
 
-  // ===== Analyzer Elements =====
   const analyzeBtn = document.getElementById("analyzeBtn");
   const resetBtn = document.getElementById("resetBtn");
   const input = document.getElementById("news-input");
@@ -15,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const scoreBar = document.getElementById("score-bar");
   const analyzerSection = document.getElementById("analyzer");
 
-  // ===== Analyze Button Functionality =====
   analyzeBtn.addEventListener("click", () => {
     const text = input.value.trim();
 
@@ -40,18 +38,16 @@ document.addEventListener("DOMContentLoaded", () => {
       scoreBar.style.width = `${confidenceScore}%`;
       scoreBar.style.backgroundColor = isFake ? "#e74c3c" : "#2ecc71";
 
-      // ✅ Scroll to result
       resultBox.scrollIntoView({ behavior: "smooth" });
     }, 1500);
   });
 
-  // ===== Reset Button =====
   resetBtn.addEventListener("click", () => {
     input.value = "";
     resultBox.style.display = "none";
 
     // ✅ Scroll back to top of analyzer section
-   const yOffset = -100; // Adjust this based on your navbar height
+   const yOffset = -100; 
 const y = analyzerSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
 window.scrollTo({ top: y, behavior: "smooth" });
 

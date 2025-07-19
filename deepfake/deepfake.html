@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deepfake Detection | SachLens</title>
+  <link rel="stylesheet" href="deepfake.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@600;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+ <!-- Navbar -->
+    <header class="navbar">
+      <div class="nav-left">
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#features">Features</a></li>
+          <li><a href="../index.html#contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="logo">SachLens <i class="fa-brands fa-searchengin"></i></div>
+
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="#">Analyze Text</a></li>
+          <li><a href="#">Verify Images</a></li>
+          <li><a href="../translate/translate.html">Translate</a></li>
+          <li><a href="../factChecker/factChecker.html">Fact Checker</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="deepfake-hero">
+    <video autoplay muted loop playsinline class="hero-bg">
+      <source src="../assets/deepfake.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    
+    <h1 class="eye-heading">Deepfake Detect<span class="blinking-eye">👁️</span>r</h1>
+
+    <div class="upload-box">
+      <!-- <i class="fas fa-upload fa-2x" style="margin-bottom: 10px;"></i> -->
+      <p>Select an image or video to analyze for deepfake content:</p>
+      <input type="file" id="mediaInput" accept="image/*,video/*" />
+      <button id="analyzeBtn" class="btn primary">Analyze</button>
+    </div>
+
+  <section class="deepfake-section">
+    <div id="result-box" class="hidden">
+      <h3>AI Verdict</h3>
+      <p id="verdict">Loading...</p>
+      <div class="meter"><div id="score-bar"></div></div>
+      <p id="confidence">Confidence Score: --%</p>
+      <p id="reason">Reason: --</p>
+      <button id="resetBtn" class="btn primary">Detect Another</button>
+    </div>
+    </section>
+
+    <!-- <div class="visual-explain">
+      <h2>Visual Explainability</h2>
+      <ul>
+        <li>🔴 Abnormal Eye Blinking</li>
+        <li>🔴 Lip Sync & Audio Mismatch</li>
+        <li>🟠 Facial Expression Inconsistencies</li>
+      </ul>
+    </div>
+
+    <div class="credibility-info">
+      <h3>⚠️ Media Credibility</h3>
+      <p>This content may be harmful. Deepfake media is commonly used in misinformation campaigns. Always verify authenticity before sharing.</p>
+    </div>
+  </section> -->
+
+  <footer class="footer">
+        <div class="footer-bottom">
+          <p>&copy; 2025 SachLens. Built for truth-seekers.</p>
+        </div>
+  </footer>
+
+  <script src="deepfake.js" defer></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

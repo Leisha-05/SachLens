@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Translator | SachLens</title>
+  <link rel="stylesheet" href="translate.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <video autoplay muted loop id="bg-video">
+    <source src="../assets/translate-bg.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video.
+  </video>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+      <div class="nav-left">
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#features">Features</a></li>
+          <li><a href="../index.html#contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="logo">SachLens <i class="fa-brands fa-searchengin"></i></div>
+
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="#">Analyze Text</a></li>
+          <li><a href="../deepfake/deepfake.html">Verify Images</a></li>
+          <li><a href="#">Translate</a></li>
+          <li><a href="../factChecker/factChecker.html">Fact Checker</a></li>
+        </ul>
+      </div>
+    </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1><span>Smart</span> Translator that <br> Speaks <span>Every</span> Indian Language</h1>
+    <p>Bridge every gap with intelligent multilingual translation.</p>
+  </section>
+
+  <section class="supported-languages">
+    <h2>Supported Indian Languages</h2>
+    <div class="flags-grid">
+      <div class="flag"><p>हिंदी</p></div>
+      <div class="flag"><p>বাংলা</p></div>
+      <div class="flag"><p>தமிழ்</p></div>
+      <div class="flag"><p>తెలుగు</p></div>
+      <div class="flag"><p>ಕನ್ನಡ</p></div>
+      <div class="flag"><p>മലയാളം</p></div>
+      <div class="flag"><p>ଓଡ଼ିଆ</p></div>
+      <div class="flag"><p>ਪੰਜਾਬੀ</p></div>
+      <div class="flag"><p>ગુજરાતી</p></div>
+      <div class="flag"><p>मराठी</p></div>
+      <div class="flag"><p>অসমীয়া</p></div>
+      <div class="flag"><p>اردو</p></div>
+    </div>
+  </section>
+
+  <section class="translator-section">
+    <div class="translator-box">
+      <h2>Translate Your Text</h2>
+      <textarea id="inputText" placeholder="Type your message here..."></textarea>
+      <div class="selectors">
+        <select id="languageSelect">
+          <option value="hi">हिंदी</option>
+          <option value="bn">বাংলা</option>
+          <option value="ta">தமிழ்</option>
+          <option value="te">తెలుగు</option>
+          <option value="kn">ಕನ್ನಡ</option>
+          <option value="ml">മലയാളം</option>
+          <option value="or">ଓଡ଼ିଆ</option>
+          <option value="pa">ਪੰਜਾਬੀ</option>
+          <option value="gu">ગુજરાતી</option>
+          <option value="mr">मराठी</option>
+          <option value="as">অসমীয়া</option>
+          <option value="ur">اردو</option>
+        </select>
+        <button onclick="translateText()">Translate</button>
+      </div>
+    </div>
+
+    <div class="result-box" id="resultBox">
+      <h3>Translated Text:</h3>
+      <p id="translatedOutput">Your translation will appear here.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2025 SachLens. Built for truth-seekers.</p>
+  </footer>
+
+  <script src="translate.js"></script>
+</body>
+</html>
+
+
+
+
+
+
