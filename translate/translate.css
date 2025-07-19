@@ -1,10 +1,10 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat",sans-serif;
+  font-family: "Montserrat", "Poppins", sans-serif;
   background: #0e0e10;
   color: white;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 #bg-video {
@@ -26,9 +26,9 @@ body {
   width: calc(100% - 100px);
   padding: 20px 40px;
   background-color: rgba(255, 255, 255, 0); 
-   display: flex;
+  display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
   border-radius: 50px;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   z-index: 20;
@@ -254,7 +254,6 @@ button:hover {
   font-size: 0.9rem;
 }
 
-/* Responsive */
 @media (max-width: 600px) {
   .hero h1 {
     font-size: 2rem;
@@ -269,7 +268,6 @@ button:hover {
     width: 100%;
   }
 }
-
 
 
 
