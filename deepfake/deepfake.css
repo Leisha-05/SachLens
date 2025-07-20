@@ -173,24 +173,18 @@ html, body {
   animation: blink 2s infinite;
   cursor: pointer;
   transition: transform 0.3s ease;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   font-size: 3rem;
   color: #ffffff;
 }
 
 .blinking-eye:hover {
-  animation: blink-fast 0.3s infinite;
-  transform: scale(1.1);
+  transform: scale(1.25);
 }
 
 @keyframes blink {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.1; }
-}
-
-@keyframes blink-fast {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
 }
 
 /*UPLOAD BOX*/
@@ -306,7 +300,7 @@ html, body {
 .footer-bottom {
   text-align: center;
   font-size: 0.9rem;
-  padding: 16px 0;
+  padding: 20px 0;
 }
 
 .hidden {
