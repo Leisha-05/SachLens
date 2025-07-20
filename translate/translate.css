@@ -4,7 +4,6 @@ body {
   font-family: "Montserrat", "Poppins", sans-serif;
   background: #0e0e10;
   color: white;
-  /* overflow-x: hidden; */
 }
 
 #bg-video {
@@ -65,7 +64,7 @@ body {
 }
 
 .nav-right {
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .nav-left .nav-links,
