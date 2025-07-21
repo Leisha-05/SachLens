@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analyze Text | SachLens</title>
+  <link rel="stylesheet" href="analyse_text.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@600;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- Background Video -->
+<video autoplay muted loop playsinline class="bg-video">
+  <source src="../assets/bg-dark.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+<!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+      <div class="nav-left">
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#features">Features</a></li>
+          <li><a href="../index.html#contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="logo">SachLens <i class="fa-brands fa-searchengin"></i></div>
+
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="#">Analyze Text</a></li>
+          <li><a href="../deepfake/deepfake.html">Verify Images</a></li>
+          <li><a href="../translate/translate.html">Translate</a></li>
+          <li><a href="../factChecker/factChecker.html">Fact Checker</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- MAIN SECTION -->
+  <section class="analyze-section" id="analyze">
+    <div class="container">
+      <h1 class="main-heading"> Analyze Your Text</h1>
+      <p class="sub-heading">Uncover hidden <span class="highlight">bias</span>, <span class="highlight">emotions</span>, and <span class="highlight">credibility</span> in articles and statements.</p>
+      <textarea id="textInput" placeholder="Paste a headline or article here..."></textarea>
+      <button id="analyzeBtn">Analyze Now</button>
+    </div>
+  </section>
+
+  <!-- RESULT SECTION -->
+  <section class="result-section" id="resultSection">
+    <div class="result-box glass">
+      <h2>Analysis Report</h2>
+      <div class="result-item">
+        <span>Emotional Language:</span>
+        <div id="emotionResult"></div>
+      </div>
+      <div class="result-item">
+        <span>Bias Type:</span>
+        <div id="biasResult"></div>
+      </div>
+      <div class="result-item">
+        <span>Source Credibility:</span>
+        <div id="credibilityResult"></div>
+      </div>
+      <div class="result-item">
+        <span>Manipulation Tactics:</span>
+        <div id="manipulationResult"></div>
+      </div>
+      <button id="detectAnother">Analyze Another</button>
+    </div>
+  </section>
+
+   <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2025 SachLens. Built for truth-seekers.</p>
+  </footer>
+
+  <script src="analyse_text.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
